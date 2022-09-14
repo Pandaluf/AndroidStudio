@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C9FDF3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLifes"
+        android:layout_width="412dp"
+        android:layout_height="49dp"
+        android:background="#434242"
+        android:fontFamily="@font/star"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FDD60D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="C" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="301dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="146dp"
+        android:background="@drawable/style_border_question"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLifes"
+        tools:text="Aqui va la pregunta" />
+
+    <Button
+        android:id="@+id/btNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="88dp"
+        android:enabled="true"
+        android:text="@string/no"
+        android:background="@drawable/btn_correct_incorrect_selector_disable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="149dp"
+        android:backgroundTint="#0362D8"
+        android:text="@string/siguiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion"
+        app:strokeColor="#000000"
+        app:strokeWidth="2dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/si"
+        android:enabled="true"
+        android:background="@drawable/btn_correct_incorrect_selector_disable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion" />
+
+    <TextView
+        android:id="@+id/tvTopic"
+        android:layout_width="629dp"
+        android:layout_height="253dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/style_border_topic"
+        android:fontFamily="@font/jumping"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btNext"
+        tools:ignore="MissingConstraints"
+        tools:text="Aqui va el Tema" />
+
+    <TextView
+        android:id="@+id/tvFinish"
+        android:layout_width="263dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="74dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FB0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLifes"
+        tools:ignore="MissingConstraints"
+        tools:text="Aqui va el resultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
